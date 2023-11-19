@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.container {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 160px;
+    border: 1px solid red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 0 40px;
+}
+
+.header__logo {
+    color: #1C2A39;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__link {
+    color: #5C6A79;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.header__link:last-child {
+    margin-right: 0;
+}
+
+.header__link.active {
+    color: #1C2A39;
+}
+
+.header__search-bar {
+    display: flex;
+}
+
+.header__btn {
+    display: block;
+    content: '';
+    width: 17px;
+    height: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.header__user-info {
+    background: url('images/icons/user.svg') no-repeat center;
+    margin-right: 20px;
+}
+
+.header__search {
+    background: url('images/icons/search.svg') no-repeat center;
+    margin-right: 20px;
+
+}
+
+.header__shopping-cart {
+    position: relative;
+    background: url('images/icons/shopping-bag.svg') no-repeat center;
+}
+
+.header__shopping-cart::after {
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    font-size: 8px;
+    content: '1';
+    width: 7px;
+    height: 10px;
+    border-radius: 5px;
+    padding: 1px 2px;
+    background-color: #FF353A;
+    color: #fff;
+
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__visual {
+    margin-bottom: 17px;
+}
+
+.slider__control {
+    width: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #EFEEF6;
+    transition: transform .5s ease-in-out;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.dot-active {
+    background-color: #bdb5ee;
+    transform: scale(1.1);
+}
