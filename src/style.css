@@ -101,6 +101,35 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.slider__change {
+    position: absolute;
+    display: block;
+    width: 148px;
+    background: #9E98DC;
+    color: #1C2A39;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 102px 20px 20px;
+    top: 50px;
+    right: -85px;
+}
+
+.slider__change-orange {
+    position: absolute;
+    display: block;
+    color: #1C2A39;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #FF8FE6;
+    padding: 102px 20px 20px;
+    width: 137px;
+    bottom: 150px;
+    right: -170px;
 }
 
 .slider__visual {
@@ -129,4 +158,130 @@ body {
 .dot-active {
     background-color: #bdb5ee;
     transform: scale(1.1);
+}
+
+
+.cards {
+    margin-top: 105px;
+    position: relative;
+}
+
+.filter {
+    background: #EFEEF6;
+    padding: 45px 152px 80px;
+    width: 416px;
+    position: absolute;
+    top: 0;
+    left: -160px;
+    z-index: 1;
+
+}
+
+.filter__item {
+    color: #5C6A79;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 23px;
+    list-style: none;
+}
+
+.filter__item.active {
+    color: #1C2A39;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    list-style: disc;
+}
+
+.filter__item:last-child {
+    margin-bottom: 0;
+}
+
+.cards__wrapper {
+    position: relative;
+    z-index: 10;
+    border: 1px solid aqua;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.cards__images {
+    max-width: 212px;
+    width: 100%;
+}
+
+.cards__pic {
+    background-color: lightgray;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards__items {
+    display: flex;
+    width: 50%;
+    margin-bottom: 85px;
+}
+
+.cards__content {
+    padding: 60px 6px 50px 30px
+}
+
+.cards__author {
+    color: #5C6A79;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+.cards__name {
+    color: #1C2A39;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cards__stars {
+    margin-bottom: 16px;
+}
+
+.cards__desc {
+    color: #5C6A79;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.cards__price {
+    color: #1C2A39;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.cards__btn {
+    background-color: #fff;
+    color: #4C3DB2;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid #4C3DB2;
+    padding: 18px 66px;
+}
+
+.cards__btn-main {
+    display: block;
+    margin: 0 auto;
 }

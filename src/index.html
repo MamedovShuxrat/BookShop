@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Shop</title>
-    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -28,6 +28,18 @@
             </div>
         </header>
         <section class="slider">
+            <div class="slider__change">Change old book on new <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="14" viewBox="0 0 57 14" fill="none">
+                    <path d="M0 7H54" stroke="#1C2A39" stroke-width="2" />
+                    <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="slider__change-orange">top 100 books 2022 <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="14" viewBox="0 0 57 14" fill="none">
+                    <path d="M0 7H54" stroke="#1C2A39" stroke-width="2" />
+                    <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2" />
+                </svg>
+            </div>
             <div class="slider__visual fade-out">
                 <img src="images/slider/banner1.jpg" alt="pic-1" class="slider__images">
             </div>
@@ -37,9 +49,350 @@
                 <div class="dot"></div>
             </div>
         </section>
+        <section class="cards">
+            <ul class="filter">
+                <li class="filter__item active">Architecture
+                </li>
+                <li class="filter__item">Art & Fashion
+                </li>
+                <li class="filter__item">Biography
+                </li>
+                <li class="filter__item">Business
+                </li>
+                <li class="filter__item">Crafts & Hobbies
+                </li>
+                <li class="filter__item">Drama
+                </li>
+                <li class="filter__item">Fiction
+                </li>
+                <li class="filter__item">Food & Drink
+                </li>
+                <li class="filter__item">Health & Wellbeing
+                </li>
+                <li class="filter__item">History & Politics
+                </li>
+                <li class="filter__item">Humor
+                </li>
+                <li class="filter__item">Poetry
+                </li>
+                <li class="filter__item">Psychology
+                </li>
+                <li class="filter__item">Science
+                </li>
+                <li class="filter__item">Technology
+                </li>
+                <li class="filter__item">Travel & Maps
+                </li>
+            </ul>
+            <div class="cards__wrapper">
+                <div class="cards__items">
+                    <div class="cards__images">
+                        <img src="images/book.png" alt="pic" class="cards__pic">
+                    </div>
+                    <div class="cards__content">
+                        <span class="cards__author">Kevin Kwan</span>
+                        <h3 class="cards__name">Crazy rich asians</h3>
+                        <div class="cards__stars">
+                            <span class="cards__star">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                    fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg>
+                            </span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#EEEDF5" />
+                                </svg></span>
+
+                            <span class="review">252 review</span>
+                        </div>
+                        <div class="cards__desc">the outrageously funny debut novel about three super-rich, pedigreed
+                            Chinese families and the gossip...</div>
+                        <div class="cards__price">$4.99</div>
+
+                        <button class="cards__btn">buy now</button>
+                    </div>
+                </div>
+                <div class="cards__items">
+                    <div class="cards__images">
+                        <img src="images/margaret.png" alt="pic" class="cards__pic">
+                    </div>
+                    <div class="cards__content">
+                        <span class="cards__author">Kevin Kwan</span>
+                        <h3 class="cards__name">Crazy rich asians</h3>
+                        <div class="cards__stars">
+                            <span class="cards__star">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                    fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg>
+                            </span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#EEEDF5" />
+                                </svg></span>
+
+                            <span class="review">252 review</span>
+                        </div>
+                        <div class="cards__desc">the outrageously funny debut novel about three super-rich, pedigreed
+                            Chinese families and the gossip...</div>
+                        <div class="cards__price">$4.99</div>
+
+                        <button class="cards__btn">buy now</button>
+                    </div>
+                </div>
+                <div class="cards__items">
+                    <div class="cards__images">
+                        <img src="images/book.png" alt="pic" class="cards__pic">
+                    </div>
+                    <div class="cards__content">
+                        <span class="cards__author">Kevin Kwan</span>
+                        <h3 class="cards__name">Crazy rich asians</h3>
+                        <div class="cards__stars">
+                            <span class="cards__star">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                    fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg>
+                            </span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#EEEDF5" />
+                                </svg></span>
+
+                            <span class="review">252 review</span>
+                        </div>
+                        <div class="cards__desc">the outrageously funny debut novel about three super-rich, pedigreed
+                            Chinese families and the gossip...</div>
+                        <div class="cards__price">$4.99</div>
+
+                        <button class="cards__btn">buy now</button>
+                    </div>
+                </div>
+                <div class="cards__items">
+                    <div class="cards__images">
+                        <img src="images/book.png" alt="pic" class="cards__pic">
+                    </div>
+                    <div class="cards__content">
+                        <span class="cards__author">Kevin Kwan</span>
+                        <h3 class="cards__name">Crazy rich asians</h3>
+                        <div class="cards__stars">
+                            <span class="cards__star">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                    fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg>
+                            </span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#EEEDF5" />
+                                </svg></span>
+
+                            <span class="review">252 review</span>
+                        </div>
+                        <div class="cards__desc">the outrageously funny debut novel about three super-rich, pedigreed
+                            Chinese families and the gossip...</div>
+                        <div class="cards__price">$4.99</div>
+
+                        <button class="cards__btn">buy now</button>
+                    </div>
+                </div>
+                <div class="cards__items">
+                    <div class="cards__images">
+                        <img src="images/book.png" alt="pic" class="cards__pic">
+                    </div>
+                    <div class="cards__content">
+                        <span class="cards__author">Kevin Kwan</span>
+                        <h3 class="cards__name">Crazy rich asians</h3>
+                        <div class="cards__stars">
+                            <span class="cards__star">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                    fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg>
+                            </span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#EEEDF5" />
+                                </svg></span>
+
+                            <span class="review">252 review</span>
+                        </div>
+                        <div class="cards__desc">the outrageously funny debut novel about three super-rich, pedigreed
+                            Chinese families and the gossip...</div>
+                        <div class="cards__price">$4.99</div>
+
+                        <button class="cards__btn">buy now</button>
+                    </div>
+                </div>
+                <div class="cards__items">
+                    <div class="cards__images">
+                        <img src="images/book.png" alt="pic" class="cards__pic">
+                    </div>
+                    <div class="cards__content">
+                        <span class="cards__author">Kevin Kwan</span>
+                        <h3 class="cards__name">Crazy rich asians</h3>
+                        <div class="cards__stars">
+                            <span class="cards__star">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                    fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg>
+                            </span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#F2C94C" />
+                                </svg></span>
+                            <span class="cards__star"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                                    viewBox="0 0 12 11" fill="none">
+                                    <path
+                                        d="M6 0L7.80568 3.5147L11.7063 4.1459L8.92165 6.9493L9.52671 10.8541L6 9.072L2.47329 10.8541L3.07835 6.9493L0.293661 4.1459L4.19432 3.5147L6 0Z"
+                                        fill="#EEEDF5" />
+                                </svg></span>
+
+                            <span class="review">252 review</span>
+                        </div>
+                        <div class="cards__desc">the outrageously funny debut novel about three super-rich, pedigreed
+                            Chinese families and the gossip...</div>
+                        <div class="cards__price">$4.99</div>
+
+                        <button class="cards__btn">buy now</button>
+                    </div>
+                </div>
+
+                <button class="cards__btn cards__btn-main">Load more</button>
+
+            </div>
+        </section>
 
     </div>
-    <script src="src/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
