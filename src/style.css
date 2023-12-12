@@ -11,22 +11,28 @@ body {
 }
 
 .container {
-    width: 1440px;
-    max-width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 160px;
-    border: 1px solid red;
 }
 
 .header {
+    background-color: #fff;
+    margin: 0 auto;
     position: fixed;
     top: 0;
-    width: 1120px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+
+}
+
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 47px 0 40px;
-    z-index: 1000;
+    margin: 0 auto;
 }
 
 .header__logo {
@@ -86,13 +92,11 @@ body {
     background: url('images/icons/shopping-bag.svg') no-repeat center;
 }
 
-.header__shopping-cart::after {
+.header__shopping-cart span {
     position: absolute;
     bottom: -2px;
     right: 0;
     font-size: 8px;
-    content: '1';
-    width: 7px;
     height: 10px;
     border-radius: 5px;
     padding: 1px 2px;
@@ -109,6 +113,10 @@ body {
     position: relative;
 }
 
+.slider__images {
+    transition: opacity 1s ease-in-out;
+}
+
 .slider__change {
     position: absolute;
     display: block;
@@ -117,6 +125,7 @@ body {
     color: #1C2A39;
     font-size: 18px;
     font-weight: 700;
+    text-decoration: none;
     text-transform: uppercase;
     padding: 102px 20px 20px;
     top: 50px;
@@ -135,6 +144,7 @@ body {
     width: 137px;
     bottom: 150px;
     right: -170px;
+    text-decoration: none;
 }
 
 .slider__visual {
@@ -187,8 +197,12 @@ body {
     font-size: 12px;
     font-weight: 500;
     text-transform: capitalize;
-    margin-bottom: 23px;
+    padding: 12px;
     list-style: none;
+}
+
+.filter__item:hover {
+    cursor: pointer;
 }
 
 .filter__item.active {
@@ -206,7 +220,6 @@ body {
 .cards__wrapper {
     position: relative;
     z-index: 10;
-    border: 1px solid aqua;
     display: flex;
     flex-wrap: wrap;
     margin-left: 150px;
@@ -291,6 +304,7 @@ body {
     padding: 18px 66px;
     position: absolute;
     bottom: 0;
+    cursor: pointer;
 }
 
 .cards__btn-main {
@@ -303,4 +317,6 @@ body {
     padding: 18px 66px;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
+
 }

@@ -1,1 +1,96 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book Shop</title><link rel="stylesheet" href="dist/main.css"><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head><body><header class="header"></header><script src="src/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#" class="header__logo">Bookshop</a>
+            <nav class="header__nav">
+                <a href="#" class="header__link active">books</a>
+                <a href="#" class="header__link">audiobooks</a>
+                <a href="#" class="header__link">Stationery & gifts</a>
+                <a href="#" class="header__link">blog</a>
+            </nav>
+            <div class="header__search-bar">
+                <button class="header__user-info header__btn"></button>
+                <button class="header__search header__btn"></button>
+                <a href="#" class="header__shopping-cart header__btn"> <span>1</span></a>
+            </div>
+        </header>
+        <section class="slider">
+            <a href="#" class="slider__change">Change old book on new <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="14" viewBox="0 0 57 14" fill="none">
+                    <path d="M0 7H54" stroke="#1C2A39" stroke-width="2" />
+                    <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2" />
+                </svg>
+            </a>
+            <a href="#" class=" slider__change-orange">top 100 books 2022 <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="14" viewBox="0 0 57 14" fill="none">
+                    <path d="M0 7H54" stroke="#1C2A39" stroke-width="2" />
+                    <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2" />
+                </svg>
+            </a>
+            <div class="slider__visual">
+                <img src="./images/slider/banner1.jpg" alt="pic-1" class="slider__images">
+            </div>
+            <div class="slider__control">
+                <div class="dot dot-active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </section>
+        <section class="cards">
+            <ul class="filter">
+                <li class="filter__item active">Architecture
+                </li>
+                <li class="filter__item">Art & Fashion
+                </li>
+                <li class="filter__item">Biography
+                </li>
+                <li class="filter__item">Business
+                </li>
+                <li class="filter__item">Crafts & Hobbies
+                </li>
+                <li class="filter__item">Drama
+                </li>
+                <li class="filter__item">Fiction
+                </li>
+                <li class="filter__item">Food & Drink
+                </li>
+                <li class="filter__item">Health & Wellbeing
+                </li>
+                <li class="filter__item">History & Politics
+                </li>
+                <li class="filter__item">Humor
+                </li>
+                <li class="filter__item">Poetry
+                </li>
+                <li class="filter__item">Psychology
+                </li>
+                <li class="filter__item">Science
+                </li>
+                <li class="filter__item">Technology
+                </li>
+                <li class="filter__item">Travel & Maps
+                </li>
+            </ul>
+            <div class="cards__wrapper">
+            </div>
+            <button class="cards__btn-main">Load more</button>
+        </section>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

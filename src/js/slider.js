@@ -21,10 +21,15 @@ function changeSlide() {
 }
 
 function upDateSlide(n) {
-    sliderImages.src = sliderImg[n].imgSrc
+    sliderImages.style.opacity = 0
+    setTimeout(() => {
+        sliderImages.src = sliderImg[n].imgSrc
+        sliderImages.style.opacity = 1
+    }, 600)
     document.querySelector('.dot.dot-active').classList.remove('dot-active')
     dots[n].classList.add('dot-active')
 }
+
 
 dots.forEach(function (dot, index) {
     dot.addEventListener('click', function () {
@@ -32,5 +37,6 @@ dots.forEach(function (dot, index) {
         upDateSlide(n)
     })
 })
+
 
 setInterval(changeSlide, 5000)
