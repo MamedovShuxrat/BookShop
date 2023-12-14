@@ -17,7 +17,7 @@ ___
 * NodeJs<br />
 * Webpack<br />
 **Плагины для Webpack** <br />
-*Html,Css,Js<br />
+* Html,Css,Js<br />
 
 ___
 * Для запуска проекта в терменале запустите команду **npm run start-dev**
