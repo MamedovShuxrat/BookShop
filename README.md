@@ -16,7 +16,7 @@ ___
 ## Технологии <br />
 * NodeJs<br />
 * Webpack<br />
-**Плагины для Webpack**
+**Плагины для Webpack** <br />
 *Html,Css,Js<br />
 
 ___
