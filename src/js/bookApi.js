@@ -7,7 +7,6 @@ let activeValue = ''
 let selectedCategories = null
 let startIndex = 0
 document.addEventListener('DOMContentLoaded', function () {
-
     initializeBuyNowButtons()
     const activeFilterItem = document.querySelector('.filter__item.active')
 
@@ -153,20 +152,20 @@ function createCard(books) {
 function updateBuyNowBtn(btn, bookId) {
     const bookIndex = findBookIndexInCart(bookId)
     if (bookIndex !== -1) {
+        btn.textContent = 'Buy now'
         removeFromCart(bookIndex)
+        shopper.textContent = getCart().length
     } else {
+        btn.textContent = 'In the cart'
         addToCart(bookId)
-    }
+        shopper.textContent = getCart().length
 
-    const cartCount = getCart().length + 1
-    btn.textContent = isBookInCart(bookId) ? 'In the cart' : 'Buy now'
-    shopper.textContent = cartCount
+    }
 }
 
 function appendCards(books) {
     if (books.items.length > 0) {
-        const newCards = createCard(books)
-        cardsItemContainer.innerHTML += newCards
+        createCard(books)
     } else {
         console.log('No more books to load.')
     }
@@ -205,7 +204,6 @@ document.addEventListener('click', function (e) {
     if (e.target.classList.contains('cards__btn')) {
         const bookId = e.target.getAttribute('data-book-id')
         updateBuyNowBtn(e.target, bookId)
-        addToCart(bookId)
     }
 })
 

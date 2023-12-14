@@ -130,6 +130,7 @@ body {
     padding: 102px 20px 20px;
     top: 50px;
     right: -85px;
+    z-index: 100;
 }
 
 .slider__change-orange {
@@ -145,6 +146,8 @@ body {
     bottom: 150px;
     right: -170px;
     text-decoration: none;
+    z-index: 100;
+
 }
 
 .slider__visual {
